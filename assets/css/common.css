@@ -1,0 +1,30 @@
+.t-block {
+    height: 45px;
+}
+
+.header-text .col {
+    font-size: 20px;
+    color: #707070;
+}
+
+#header {
+    box-shadow: 1px 1px 6px 1px #cccccc;
+}
+
+#footer {
+    background-color: #3574aa;
+}
+
+.footer-text {
+    color: white;
+    font-size: 12px;
+}
+
+.footer-text .fas {
+    color: white;
+    font-size: 15px;
+}
+
+.footer-text .col {
+    margin: auto 0;
+}
