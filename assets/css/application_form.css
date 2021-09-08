@@ -1,0 +1,79 @@
+table.steps {
+    border-collapse: separate;
+    border-spacing: 15px 0;
+    width: 100%;
+    table-layout: fixed;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+table.steps td {
+    height: 100px;
+    padding: 10px;
+    vertical-align: top;
+    background-color: white;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+table.steps td.done {
+    color: white;
+    background-color: rgb(156, 200, 19);
+    border: 3px solid rgb(156, 200, 19);
+}
+
+table.steps td.process {
+    border: 3px solid rgb(156, 200, 19);
+}
+
+td span {
+    color: white;
+    white-space: nowrap;
+}
+
+td.done span {
+    color: rgb(156, 200, 19);
+}
+
+.done .circle {
+    background-color: white;
+}
+
+td span.required {
+    border-radius: 25px;
+    background-color: red;
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    padding: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+}
+
+section.form span {
+    color: red;
+}
+
+section.form table {
+    font-size: 16px;
+}
+
+section.form table td {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+section.form table input {
+    margin-top: 6px;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 6px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+section.form button {
+    margin: 10px;
+    width: 250px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 0;
+}

@@ -15,6 +15,24 @@
     box-shadow: 1px 1px 6px 1px #cccccc;
 }
 
+article {
+    background-color: rgba(240, 246, 242, 1);
+    font-family: 'Noto Sans TC', 'Roboto';
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+article header {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+article section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 #footer {
     background-color: #3574aa;
 }
