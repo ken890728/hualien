@@ -120,6 +120,7 @@ ul.none-list li:not(:last-child) {
     height: 26px;
     text-align: center;
     display: inline-block;
+    padding: 0 !important;
 }
 
 td span {
@@ -138,4 +139,53 @@ td .required {
     padding-right: 5px;
     margin: 5px;
     width: fit-content
+}
+
+.checkbox-group {
+    margin-bottom: 50px;
+}
+
+.checkbox-group input[type=checkbox] {
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 15px;
+    height: 12px;
+    position: relative;
+}
+
+.checkbox-group input[type=checkbox]:after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    content: " ";
+    background-color: rgba(255, 255, 255, 0);
+    color: black;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid black;
+}
+
+.checkbox-group input[type=checkbox]:checked:after {
+    content: "✓";
+    font-size: 20px;
+}
+
+.form-table {
+    font-weight: 500;
+    width: 90%;
+}
+
+.form-table tr:nth-child(1) {
+    background-color: rgb(156, 199, 21);
+}
+
+.form-table tr {
+    height: 45px;
+    border: 1px solid rgb(200, 200, 200);
+}
+
+.form-table td {
+    padding-left: 80px;
 }
