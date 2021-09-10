@@ -90,6 +90,7 @@ center a:active {
 
 button {
     border-radius: 0 !important;
+    cursor: pointer;
 }
 
 .green {
@@ -111,4 +112,24 @@ hr:after {
     padding-right: 10px;
     color: black;
     z-index: 2;
+}
+
+.fb-btn {
+    color: #1777f1;
+    font-weight: bolder;
+}
+
+.gg-btn {
+    color: #585657;
+    font-weight: bolder;
+}
+
+.fd-btn {
+    color: #e6006e;
+    font-weight: bolder;
+}
+
+.na-btn {
+    color: #585657;
+    font-weight: bolder;
 }
