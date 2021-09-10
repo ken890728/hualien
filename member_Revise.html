@@ -25,126 +25,121 @@
     </header>
 
     <article class="content-background">
-        <div class="row top-block">
-            <div class="col col-1">
+        <div class="container">
+            <div class="row top-block">
+                <div class="col col-2 top-lg-text">
+                    會員中心
+                </div>
+                <div class="col col-8">
 
-            </div>
-            <div class="col col-2 top-lg-text">
-                會員中心
-            </div>
-            <div class="col col-6">
-
-            </div>
-            <div class="col col-2 top-sm-text">
-                <i class="fas fa-user"></i>王先生 您好
-            </div>
-            <div class="col col-1">
-
+                </div>
+                <div class="col col-2 top-sm-text">
+                    <i class="fas fa-user"></i>王先生 您好
+                </div>
             </div>
         </div>
-        <div class="row middle-block">
-            <div class="col col-1">
+        <div class="container">
+            <div class="row middle-block">
+                <div class="col col-2 left-menu">
+                    <div class="left-menu-item left-menu-item-active">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="col-10">
+                                歷史案件
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-menu-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="far fa-edit"></i>
+                            </div>
+                            <div class="col-10">
+                                案件歸戶
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-menu-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="far fa-file-alt"></i>
+                            </div>
+                            <div class="col-10">
+                                基本資料
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-menu-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="col-10">
+                                身分驗證
+                            </div>
+                        </div>
 
-            </div>
-            <div class="col col-2 left-menu">
-                <div class="left-menu-item left-menu-item-active">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="far fa-clock"></i>
-                        </div>
-                        <div class="col-10">
-                            歷史案件
+                    </div>
+                    <div class="left-menu-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="col-10">
+                                密碼變更
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="left-menu-item">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="far fa-edit"></i>
-                        </div>
-                        <div class="col-10">
-                            案件歸戶
-                        </div>
-                    </div>
-                </div>
-                <div class="left-menu-item">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="far fa-file-alt"></i>
-                        </div>
-                        <div class="col-10">
-                            基本資料
-                        </div>
-                    </div>
-                </div>
-                <div class="left-menu-item">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <div class="col-10">
-                            身分驗證
-                        </div>
-                    </div>
 
-                </div>
-                <div class="left-menu-item">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <div class="col-10">
-                            密碼變更
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col col-8">
-                <form action="member_memberInfo.html" method="POST" enctype="multipart/form-data" >
-                    <div class="contnetMain" >
-                        <!--內容-->
-                        <h3 class="h3">修改資料</h3>        
-                        <div class="content">
-                            <div class="row">
-                                <div class="col-6"> 
-                                    <div>姓名</div>
-                                        <input type="text" class="input-text" value="王小名"  size="30"  >
-                                    <div>生日</div>
-                                        <input type="text" class="input-text" size="30" >   
-                                    <div>信箱</div>
-                                        <input type="text" class="input-text" value="abc@gmail.com" size="30" >
-                                </div>
-                                <div class="col-6"> 
-                                    <div>手機號碼</div>
-                                        <div class="row"> 
-                                            <input type="text" class="input-text" value="0912345678" size="23" >
-                                            <input type="submit" class="input-submit"  value="送出驗證碼" >   
+                <div class="col col-10">
+                    <form action="member_memberInfo.html" method="POST" enctype="multipart/form-data">
+                        <div class="contnetMain">
+                            <!--內容-->
+                            <h3 class="h3">修改資料</h3>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="label">姓名 <span class="red">*</span></div>
+                                        <input type="text" class="input-text" value="王小名" size="30">
+                                        <div class="label">生日 <span class="red">*</span></div>
+                                        <input type="date" class="input-text" size="30">
+                                        <div class="label">信箱 <span class="red">*</span></div>
+                                        <input type="email" class="input-text" value="abc@gmail.com" size="30">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="label">手機號碼 <span class="red">*</span></div>
+                                        <div class="input-btn-block">
+                                            <input type="text" class="input-text input-vi" value="0912345678" size="23">
+                                            <button>送出驗證碼</button>
+                                            <button style="display: none;">重新發送驗證碼</button>
                                         </div>
-                                    <div>輸入驗證瑪</div>
-                                        <div class="row"> 
-                                            <input type="text" class="input-text" value="ABC123" size="23" >
-                                            <input type="submit" class="input-submit" value="送出">    
+                                        <div class="label">請輸入驗證瑪 <span class="red">*</span></div>
+                                        <div class="input-btn-block">
+                                            <input type="text" class="input-text input-vi" value="ABC123" size="23">
+                                            <button>送出</button>
+                                            <button class="success" style="display: none;">已驗證 ✔</button>
+                                            <button class="error" style="display: none;">驗證碼錯誤 🗙</button>
                                         </div>
+                                        <div class="alert">
+                                            驗證碼有效時間尚餘:1分30秒
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>     
-                        </div>                     
-                    </div>
-                    <div class="row top-block">
-                        <div class="col-2"></div>
-                        <div class="col-2">
-                            <input type="submit" class="input-submit2" value="取消" >
+                            </div>
                         </div>
-                        <div class="col-1"></div>
-                        <div class="col-7">
-                            <input type="submit" class="input-submit3" value="儲存送出">
+                        <div class="btn-block">
+                            <button type="button" class="btn btn-wh"> 取消 </button>
+                            <button type="button" class="btn btn-warning"> 儲存送出 </button>
                         </div>
-                    </div>    
-                </form>
-            </div>   
+                    </form>
+                </div>
                 <!--內容-->
-            <div class="col col-1">
+                <div class="col col-1">
 
+                </div>
             </div>
         </div>
     </article>
