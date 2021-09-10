@@ -15,6 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/css/common.css" />
     <link rel="stylesheet" href="assets/css/member.css" />
+    <link rel="stylesheet" href="assets/css/member_history.css" />
     <script src="assets/js/member.js"></script>
 </head>
 
@@ -24,90 +25,258 @@
     </header>
 
     <article class="content-background">
-        <div class="row top-block">
-            <div class="col col-1">
+        <div class="container">
+            <div class="row top-block">
+                <div class="col col-2 top-lg-text">
+                    會員中心
+                </div>
+                <div class="col col-8">
 
-            </div>
-            <div class="col col-2 top-lg-text">
-                會員中心
-            </div>
-            <div class="col col-6">
-
-            </div>
-            <div class="col col-2 top-sm-text">
-                <i class="fas fa-user"></i>王先生 您好
-            </div>
-            <div class="col col-1">
-
+                </div>
+                <div class="col col-2 top-sm-text">
+                    <i class="fas fa-user"></i>王先生 您好
+                </div>
             </div>
         </div>
-        <div class="row middle-block">
-            <div class="col col-1">
-
-            </div>
-            <div class="col col-2 left-menu">
-                <div class="left-menu-item left-menu-item-active">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="far fa-clock"></i>
+        <div class="container">
+            <div class="row middle-block">
+                <div class="col col-2 left-menu">
+                    <div class="left-menu-item left-menu-item-active">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="far fa-clock"></i>
+                            </div>
+                            <div class="col-10">
+                                歷史案件
+                            </div>
                         </div>
-                        <div class="col-10">
-                            歷史案件
+                    </div>
+                    <div class="left-menu-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="far fa-edit"></i>
+                            </div>
+                            <div class="col-10">
+                                案件歸戶
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-menu-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="far fa-file-alt"></i>
+                            </div>
+                            <div class="col-10">
+                                基本資料
+                            </div>
+                        </div>
+                    </div>
+                    <div class="left-menu-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fas fa-user-shield"></i>
+                            </div>
+                            <div class="col-10">
+                                身分驗證
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="left-menu-item">
+                        <div class="row">
+                            <div class="col-1">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <div class="col-10">
+                                密碼變更
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="left-menu-item">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="far fa-edit"></i>
+
+                <div class="col col-10">
+                    <div class="search-block">
+                        <input name="id" class="search-id" type="text" placeholder="輸入案件編號">
+                        <select class="search-box">
+                            <option>申請方式</option>
+                            <option>線上申請</option>
+                            <option>臨櫃申請</option>
+                        </select>
+                        <select class="search-box">
+                            <option>狀態</option>
+                            <option>通過</option>
+                            <option>補件</option>
+                            <option>處理中</option>
+                            <option>待繳費</option>
+                            <option>不通過</option>
+                            <option>已完成</option>
+                        </select>
+                        <select class="search-box">
+                            <option>繳費</option>
+                            <option>繳費去</option>
+                            <option>已繳費</option>
+                            <option>待審核</option>
+                            <option>不需繳費</option>
+                            <option>審核未通過</option>
+                        </select>
+                        <i class="fas fa-search"></i>
+                        <div class="middle-page-qt">
+                            此頁顯示筆數
+                            <select>
+                                <option>10</option>
+                                <option>15</option>
+                                <option>30</option>
+                            </select>
                         </div>
-                        <div class="col-10">
-                            案件歸戶
+                    </div>
+
+                    <div class="table-view-block">
+                        <table class="table-view">
+                            <thead>
+                                <tr>
+                                    <th width="12%">申請日期</th>
+                                    <th width="12%">案件編號</th>
+                                    <th width="25%">表單名稱</th>
+                                    <th width="10%">申請方式</th>
+                                    <th width="10%">狀態</th>
+                                    <th width="10%">繳費</th>
+                                    <th width="21%"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2021-02-01</td>
+                                    <td>120394920</td>
+                                    <td>門牌補發申請</td>
+                                    <td>臨櫃申請</td>
+                                    <td>通過</td>
+                                    <td>不需繳費</td>
+                                    <td class="table-btn-block">
+                                        <div class="y-btn">檢視</div>
+                                        <div class="g-btn">再次申請</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2021-02-01</td>
+                                    <td>120394920</td>
+                                    <td>身心障礙者專用停車位</td>
+                                    <td>線上申請</td>
+                                    <td>通過</td>
+                                    <td><a href="">繳費去</a></td>
+                                    <td class="table-btn-block">
+                                        <div class="y-btn">檢視</div>
+                                        <div class="g-btn">再次申請</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2021-02-01</td>
+                                    <td>120394920</td>
+                                    <td>大貨車及聯結車臨時通行證</td>
+                                    <td>臨櫃申請</td>
+                                    <td><a href="">補件</a></td>
+                                    <td>已繳費</td>
+                                    <td class="table-btn-block">
+                                        <div class="y-btn">檢視</div>
+                                        <div class="g-btn">再次申請</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2021-02-01</td>
+                                    <td>120394920</td>
+                                    <td>手語翻譯及同步聽打服務</td>
+                                    <td>線上申請</td>
+                                    <td>處理中</td>
+                                    <td>待審核</td>
+                                    <td class="table-btn-block">
+                                        <div class="y-btn">檢視</div>
+                                        <div class="g-btn">再次申請</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2021-02-01</td>
+                                    <td>120394920</td>
+                                    <td>重劃費用負擔證明</td>
+                                    <td>臨櫃申請</td>
+                                    <td>處理中</td>
+                                    <td><a href="">繳費去</a></td>
+                                    <td class="table-btn-block">
+                                        <div class="y-btn">檢視</div>
+                                        <div class="g-btn">再次申請</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2021-02-01</td>
+                                    <td>120394920</td>
+                                    <td>門牌補發申請</td>
+                                    <td>臨櫃申請</td>
+                                    <td>待繳費</td>
+                                    <td>不需繳費</td>
+                                    <td class="table-btn-block">
+                                        <div class="y-btn">檢視</div>
+                                        <div class="g-btn">再次申請</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2021-02-01</td>
+                                    <td>120394920</td>
+                                    <td>門牌補發申請</td>
+                                    <td>臨櫃申請</td>
+                                    <td><span class="red">不通過</span></td>
+                                    <td><span class="red">審核未通過</span></td>
+                                    <td class="table-btn-block">
+                                        <div class="y-btn">檢視</div>
+                                        <div class="g-btn">再次申請</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2021-02-01</td>
+                                    <td>120394920</td>
+                                    <td>重劃費用負擔證明</td>
+                                    <td>臨櫃申請</td>
+                                    <td>處理中</td>
+                                    <td><a href="">繳費去</a></td>
+                                    <td class="table-btn-block">
+                                        <div class="y-btn">檢視</div>
+                                        <div class="g-btn">再次申請</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2021-02-01</td>
+                                    <td>120394920</td>
+                                    <td>門牌補發申請</td>
+                                    <td>臨櫃申請</td>
+                                    <td>待繳費</td>
+                                    <td>不需繳費</td>
+                                    <td class="table-btn-block">
+                                        <div class="y-btn">檢視</div>
+                                        <div class="g-btn">再次申請</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2021-02-01</td>
+                                    <td>120394920</td>
+                                    <td>門牌補發申請</td>
+                                    <td>臨櫃申請</td>
+                                    <td><span class="red">不通過</span></td>
+                                    <td><span class="red">審核未通過</span></td>
+                                    <td class="table-btn-block">
+                                        <div class="y-btn">檢視</div>
+                                        <div class="g-btn">再次申請</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="page-block">
+                            <div class="page page-first ">第一頁</div>
+                            <div class="page page-num active ">1</div>
+                            <div class="page page-num ">2</div>
+                            <div class="page page-num ">3</div>
+                            <div class="page page-num ">4</div>
+                            <div class="page page-num ">5</div>
+                            <div class="page page-last ">最末頁</div>
                         </div>
                     </div>
                 </div>
-                <div class="left-menu-item">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="far fa-file-alt"></i>
-                        </div>
-                        <div class="col-10">
-                            基本資料
-                        </div>
-                    </div>
-                </div>
-                <div class="left-menu-item">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="fas fa-user-shield"></i>
-                        </div>
-                        <div class="col-10">
-                            身分驗證
-                        </div>
-                    </div>
-
-                </div>
-                <div class="left-menu-item">
-                    <div class="row">
-                        <div class="col-1">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <div class="col-10">
-                            密碼變更
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col col-8">
-                <!--內容-->
-
-                <!--內容-->
-            </div>
-
-
-            <div class="col col-1">
 
             </div>
         </div>

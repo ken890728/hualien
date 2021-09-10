@@ -1,0 +1,147 @@
+.red {
+    color: red;
+}
+
+.search-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-id {
+    width: 20%;
+    height: 36px;
+    border: solid #cccccc 1px;
+    padding-left: 10px;
+}
+
+.search-box {
+    width: 15%;
+    height: 36px;
+    border: solid #cccccc 1px;
+    padding-left: 10px;
+    color: #606060;
+    margin-left: 10px;
+}
+
+.middle-page-qt {
+    color: #585657;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 20px;
+    margin: auto 0;
+}
+
+.middle-page-qt select {
+    width: 60px;
+    text-align: center;
+    border: solid #cccccc 1px;
+    margin-left: 10px;
+}
+
+.search-block .fas.fa-search {
+    font-size: 25px;
+}
+
+.table-view-block {
+    margin-top: 20px;
+}
+
+.table-view {
+    width: 100%;
+    border: solid #cccccc 1px;
+}
+
+.table-view thead tr th {
+    background-color: #3574aa;
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+
+.table-view tbody tr td {
+    height: 50px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+}
+
+.table-view tbody tr td:nth-child(3) {
+    text-align: left;
+}
+
+.table-view tbody tr td a {
+    text-decoration: none;
+    color: #007bff;
+    border-bottom: 1px #007bff solid;
+    padding-bottom: 1px;
+}
+
+.table-view tbody tr:nth-child(2n-1) {
+    background-color: white;
+}
+
+.table-view tbody tr:nth-child(2n) {
+    background-color: #f0f0f0;
+}
+
+.table-btn-block {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.table-btn-block .y-btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #f7ad30;
+    color: white;
+    cursor: pointer;
+}
+
+.table-btn-block .g-btn {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #00a939;
+    color: white;
+    cursor: pointer;
+}
+
+.page-block {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.page-block .page {
+    color: #585657;
+    background-color: white;
+    border: solid #cccccc 1px;
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.page-block .page-num {
+    padding: 5px 10px;
+    text-align: center;
+    width: 36px;
+}
+
+.page-block .page-num.active {
+    color: white;
+    background-color: #5f6d74;
+}
+
+.page-block .page-first,
+.page-block .page-last {
+    padding: 5px 30px;
+}
