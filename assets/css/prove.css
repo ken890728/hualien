@@ -169,7 +169,8 @@ td .required {
 
 .checkbox-group input[type=checkbox]:checked:after {
     content: "✓";
-    font-size: 20px;
+    font-size: 28px;
+    line-height: 0;
 }
 
 .form-table {
