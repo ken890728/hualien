@@ -33,7 +33,7 @@
         <div class="container">
 
             <header> 申請表單 </header>
-            <section>
+            <section class="d-none d-xl-block">
                 <table class="steps">
                     <tr>
                         <td class="done">
@@ -56,40 +56,37 @@
                 </table>
             </section>
 
+            <section class="d-xl-none">
+                <div class="phone-process">
+                    <span> <div class="phone-circle"> 2 </div> </span> 填寫申請資料
+                    <span class="phone-required"> 必填 </span>
+                </div>
+            </section>
 
             <header> 2.填寫申請表 </header>
             <section class="form row">
-                <table class="col-12">
-                    <tr>
-                        <td>
-                            公司行號 <span> * </span> <br>
-                            <input type="text">
-                        </td>
-                        <td>
-                            領證聯絡人 <span> * </span> <br>
-                            <input type="text">
-                        </td>
-                    </tr>
+                <div class="col col-12 col-xl-6">
+                    公司行號 <span> * </span> <br>
+                    <input type="text">
+                </div>
+                <div class="col col-12 col-xl-6">
+                    領證聯絡人 <span> * </span> <br>
+                    <input type="text">
+                </div>
+                <div class="col col-12 col-xl-6">
+                    負責人 <span> * </span> <br>
+                    <input type="text">
+                </div>
+                <div class="col col-12 col-xl-6">
+                    領辦證電話 <span> * </span> <br>
+                    <input type="text">
+                </div>
+                <div class="col col-12 col-xl-6">
+                    公司地址 <span> * </span> <br>
+                    <input type="text">
+                </div>
 
-                    <tr>
-                        <td>
-                            負責人 <span> * </span> <br>
-                            <input type="text">
-                        </td>
-                        <td>
-                            領辦證電話 <span> * </span> <br>
-                            <input type="text">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            公司地址 <span> * </span> <br>
-                            <input type="text">
-                        </td>
-                    </tr>
-                </table>
-
-                <div class="col-12">
+                <div class="btn-block col-12">
                     <center>
                         <button type="button" class="btn btn-light"> 上一步 </button>
                         <button type="button" class="btn btn-warning"> 下一步 </button>

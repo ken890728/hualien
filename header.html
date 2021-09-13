@@ -2,13 +2,13 @@
 <script src="https://kit.fontawesome.com/9ef98f662b.js" crossorigin="anonymous"></script>
 <div class="container header">
     <div class="row">
-        <div class="col-3">
+        <div class="col-8 col-xl-3">
             <a href="/index.html"><img src="assets/images/logo.jpg" width="100%"></a>
         </div>
-        <div class="col-2">
+        <div class="col-2 col-xl-2">
 
         </div>
-        <div class="col-7">
+        <div class="col-xl-7 d-none d-xl-block">
             <div class="t-block">
 
             </div>
@@ -37,6 +37,25 @@
                 </div>
             </div>
         </div>
+        <div class="col-2 d-xl-none phone-list-icon">
+            <i class="fas fa-list-ul phone-list-btn" onclick="open_phone_list()"></i>
+        </div>
     </div>
-
+    <div class="phone-list" style="display: none;">
+        <div class="phone-list-item">
+            案件查詢
+        </div>
+        <div class="phone-list-item">
+            線上申請
+        </div>
+        <div class="phone-list-item">
+            聯絡我們
+        </div>
+        <div class="phone-list-item">
+            <i class="fas fa-user"></i> 登入
+        </div>
+        <div class="phone-list-item">
+            <i class="fas fa-plus-circle"></i> 註冊
+        </div>
+    </div>
 </div>

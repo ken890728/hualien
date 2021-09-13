@@ -15,6 +15,25 @@
     box-shadow: 1px 1px 6px 1px #cccccc;
 }
 
+.header .row {
+    align-items: flex-end;
+}
+
+.phone-list-icon {
+    font-size: 30px;
+    color: #3574aa;
+    text-align: right;
+}
+
+.phone-list {
+    text-align: right;
+}
+
+.phone-list-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
 article {
     background-color: rgba(240, 246, 242, 1);
     font-family: 'Noto Sans TC', 'Roboto';
