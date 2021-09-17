@@ -39,6 +39,20 @@ section.sm {
     padding-right: 10%;
 }
 
+.file-block {
+    padding: 10px;
+}
+
+.file-blue-block {
+    background-color: #17589c;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 .p-box {
     border: 1px solid rgb(200, 200, 200);
     background-color: white;
@@ -50,7 +64,17 @@ section.sm {
     margin-top: 15px;
     margin-left: 30px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bolder;
+}
+
+.p-box .scroll-block {
+    height: 200px;
+    overflow: auto;
+}
+
+.content-block {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 @media (min-width: 1140px) {
@@ -239,4 +263,9 @@ td .required {
 .input-data {
     margin-left: 0 !important;
     margin-right: 0 !important;
+}
+
+.pdfobject-container {
+    height: 80vh;
+    border: 1rem solid rgba(0, 0, 0, .1);
 }
