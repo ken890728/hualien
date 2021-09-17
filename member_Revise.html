@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="assets/css/common.css" />
     <link rel="stylesheet" href="assets/css/member.css" />
     <link rel="stylesheet" href="assets/css/content.css" />
-    <script src="assets/js/common.js"></script>
+    <script src="assets/js/member.js"></script>
 </head>
 
 <body>
@@ -27,20 +27,20 @@
     <article class="content-background">
         <div class="container">
             <div class="row top-block">
-                <div class="col col-2 top-lg-text">
+                <div class="col col-6 col-xl-2 top-lg-text">
                     會員中心
                 </div>
-                <div class="col col-8">
+                <div class="col col-8 d-none d-xl-block">
 
                 </div>
-                <div class="col col-2 top-sm-text">
+                <div class="col col-6 col-xl-2 top-sm-text">
                     <i class="fas fa-user"></i>王先生 您好
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row middle-block">
-                <div class="col col-2 left-menu">
+                <div class="col col-xl-2 left-menu d-none d-xl-block">
                     <div class="left-menu-item left-menu-item-active">
                         <div class="row">
                             <div class="col-1">
@@ -94,14 +94,14 @@
                     </div>
                 </div>
 
-                <div class="col col-10">
+                <div class="col col-12 col-xl-10">
                     <form action="member_memberInfo.html" method="POST" enctype="multipart/form-data">
                         <div class="contnetMain">
                             <!--內容-->
                             <h3 class="h3">修改資料</h3>
                             <div class="content">
                                 <div class="row">
-                                    <div class="col-6">
+                                    <div class="col-xl-6">
                                         <div class="label">姓名 <span class="red">*</span></div>
                                         <input type="text" class="input-text" value="王小名" size="30">
                                         <div class="label">生日 <span class="red">*</span></div>
@@ -109,19 +109,27 @@
                                         <div class="label">信箱 <span class="red">*</span></div>
                                         <input type="email" class="input-text" value="abc@gmail.com" size="30">
                                     </div>
-                                    <div class="col-6">
+                                    <div class="col-xl-6">
                                         <div class="label">手機號碼 <span class="red">*</span></div>
-                                        <div class="input-btn-block">
-                                            <input type="text" class="input-text input-vi" value="0912345678" size="23">
-                                            <button>送出驗證碼</button>
-                                            <button style="display: none;">重新發送驗證碼</button>
+                                        <div class="row input-btn-block">
+                                            <div class="col-12 col-xl-8">
+                                                <input type="text" class="input-text input-vi" value="0912345678" size="23">
+                                            </div>
+                                            <div class="col-12 col-xl-4">
+                                                <button>送出驗證碼</button>
+                                                <button style="display: none;">重新發送驗證碼</button>
+                                            </div>
                                         </div>
                                         <div class="label">請輸入驗證瑪 <span class="red">*</span></div>
-                                        <div class="input-btn-block">
-                                            <input type="text" class="input-text input-vi" value="ABC123" size="23">
-                                            <button>送出</button>
-                                            <button class="success" style="display: none;">已驗證 ✔</button>
-                                            <button class="error" style="display: none;">驗證碼錯誤 🗙</button>
+                                        <div class="row input-btn-block">
+                                            <div class="col-12 col-xl-8">
+                                                <input type="text" class="input-text input-vi" value="ABC123" size="23">
+                                            </div>
+                                            <div class="col-12 col-xl-4">
+                                                <button>送出</button>
+                                                <button class="success" style="display: none;">已驗證 ✔</button>
+                                                <button class="error" style="display: none;">驗證碼錯誤 🗙</button>
+                                            </div>
                                         </div>
                                         <div class="alert">
                                             驗證碼有效時間尚餘:1分30秒
@@ -130,9 +138,15 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="btn-block">
-                            <button type="button" class="btn btn-wh"> 取消 </button>
-                            <button type="button" class="btn btn-warning"> 儲存送出 </button>
+                        <div class="edit-btn-block">
+                            <div class="row">
+                                <div class="col-12 col-xl-6">
+                                    <button type="button" class="btn btn-wh"> 取消 </button>
+                                </div>
+                                <div class="col-12 col-xl-6">
+                                    <button type="button" class="btn btn-warning"> 儲存送出 </button>
+                                </div>
+                            </div>
                         </div>
                     </form>
                 </div>

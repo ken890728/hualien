@@ -27,11 +27,16 @@ center a:active {
 }
 
 .table {
-    padding-left: 50px;
-    padding-right: 50px;
     margin: 0;
     width: 100%;
     font-size: 18px;
+}
+
+@media (min-width: 1140px) {
+    .table {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }
 
 .table input {
@@ -133,5 +138,26 @@ hr:after {
 
 .na-btn {
     color: #585657;
+    font-weight: bolder;
+}
+
+.submit-btn-block {
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.submit-btn-block .col-12 {
+    text-align: center;
+}
+
+.submit-btn-block .btn {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.submit-btn-block a {
+    color: black;
     font-weight: bolder;
 }

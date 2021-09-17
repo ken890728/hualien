@@ -1,16 +1,14 @@
 .middle-content {
-    display: flex;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
 .middle-content-block {
-    width: 32%;
     padding: 20px;
     border: solid #cccccc 1px;
     background-color: white;
     position: relative;
     height: 250px;
+    margin-top: 20px;
 }
 
 .middle-text-lg {

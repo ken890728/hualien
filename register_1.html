@@ -34,13 +34,13 @@
                     <div class="circle">1</div>
                     <span>填寫基本資料</span>
                 </div>
-                <img src="assets/images/sm-arrow.jpg" alt="">
-                <div class="step">
+                <img class="d-none d-xl-block" src="assets/images/sm-arrow.jpg" alt="">
+                <div class="step d-none d-xl-block">
                     <div class="circle">2</div>
                     <span>身分驗證</span>
                 </div>
-                <img src="assets/images/sm-arrow.jpg" alt="">
-                <div class="step">
+                <img class=" d-none d-xl-block" src="assets/images/sm-arrow.jpg" alt="">
+                <div class="step d-none d-xl-block">
                     <div class="circle">3</div>
                     <span>註冊完成</span>
                 </div>
@@ -48,41 +48,50 @@
             <div class="form-block">
                 <form>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-xl-6">
                             <div class="label">姓名<span class="red">*</span></div>
                             <div><input name="name" class="input" type="text"></div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-12 col-xl-6">
                             <div class="label">密碼<span class="red">*</span></div>
                             <div><input name="password" class="input" type="password"></div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-12 col-xl-6">
                             <div class="label">生日<span class="red">*</span></div>
                             <div><input name="birth" class="input" type="date"></div>
                         </div>
-                        <div class="col-6">
-                            <div class="label">手機號碼<span class="red">*</span></div>
-                            <div class="input-btn-block">
-                                <input name="phone" class="input input-s" type="text">
-                                <button>發送驗證碼</button>
-                                <button style="display: none;">重新發送驗證碼</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
+
+                        <div class="col-12 col-xl-6">
                             <div class="label">信箱<span class="red">*</span></div>
                             <div><input name="email" class="input" type="email"></div>
                         </div>
-                        <div class="col-6">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-xl-6">
+                            <div class="label">手機號碼<span class="red">*</span></div>
+                            <div class="row input-btn-block">
+                                <div class="col-12 col-xl-8">
+                                    <input type="text" class="input-text input-vi" value="0912345678" size="23">
+                                </div>
+                                <div class="col-12 col-xl-4">
+                                    <button>送出驗證碼</button>
+                                    <button style="display: none;">重新發送驗證碼</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-6">
                             <div class="label">請輸入驗證碼<span class="red">*</span></div>
-                            <div class="input-btn-block">
-                                <input name="code" class="input input-s" type="text">
-                                <button>送出</button>
-                                <button class="success" style="display: none;">已驗證 ✔</button>
-                                <button class="error" style="display: none;">驗證碼錯誤 🗙</button>
+                            <div class="row input-btn-block">
+                                <div class="col-12 col-xl-8">
+                                    <input type="text" class="input-text input-vi" value="ABC123" size="23">
+                                </div>
+                                <div class="col-12 col-xl-4">
+                                    <button>送出</button>
+                                    <button class="success" style="display: none;">已驗證 ✔</button>
+                                    <button class="error" style="display: none;">驗證碼錯誤 🗙</button>
+                                </div>
                             </div>
                             <div class="alert">
                                 驗證碼有效時間尚餘:1分30秒
@@ -91,8 +100,12 @@
                     </div>
                 </form>
             </div>
-            <div class="btn-block">
-                <button type="button" class="btn btn-warning"> 下一步 </button>
+            <div class="edit-btn-block">
+                <div class="row">
+                    <div class="col-12 col-xl-6">
+                        <button type="button" class="btn btn-warning"> 下一步 </button>
+                    </div>
+                </div>
             </div>
         </div>
     </article>

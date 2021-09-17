@@ -2,13 +2,18 @@
     height: 45px;
 }
 
-.header-text .col {
+.header-text-block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-text-block .col {
     font-size: 20px;
     color: #707070;
 }
 
-.header-text .col-2 {
-    padding: 5px;
+.header-text-block .header-text {
+    padding: 10px 10px;
 }
 
 #header {

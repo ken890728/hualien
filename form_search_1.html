@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/common.css" />
     <link rel="stylesheet" href="assets/css/form_search.css" />
     <link rel="stylesheet" href="assets/css/form_search_1.css" />
+    <link rel="stylesheet" href="assets/css/form_search_2.css" />
     <script src="assets/js/common.js"></script>
 </head>
 
@@ -31,59 +32,59 @@
                     申請表單列表
                 </div>
                 <div class="row">
-                    <div class="col-7">
+                    <div class="col-12 col-xl-7">
                         <div class="row btn-tab-clock">
-                            <div class="col-5-1">
+                            <div class="col-6 col-5-1">
                                 <button class="btn-tab">
                                     單位機關
                                 </button>
                             </div>
-                            <div class="col-5-1">
+                            <div class="col-6 col-5-1">
                                 <button class="btn-tab">
                                     表單類型
                                 </button>
                             </div>
-                            <div class="col-5-1">
+                            <div class="col-6 col-5-1">
                                 <button class="btn-tab">
                                     申請類型
                                 </button>
                             </div>
-                            <div class="col-5-1">
+                            <div class="col-6 col-5-1">
                                 <button class="btn-tab">
                                     填寫方式
                                 </button>
                             </div>
-                            <div class="col-5-1">
+                            <div class="col-6 col-5-1">
                                 <button class="btn-tab active">
                                     身份角色
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-1">
+                    <div class="col-xl-1">
 
                     </div>
-                    <div class="col-3">
+                    <div class="search-text-block col-12 col-xl-3">
                         <input class="search-text" name="search-text" type="text" placeholder="請輸入表單名稱搜尋">
                         <div class="search-icon"><i class="fas fa-search"></i></div>
                     </div>
-                    <div class="col-1">
-                        <img src="assets/images/block1.JPG" height="36px">
+                    <div class="d-none d-xl-block col-xl-1 switch-icon">
+                        <img src="assets/images/block2.JPG" height="36px">
                     </div>
                 </div>
                 <div class="middle-block">
                     <div class="middle-block-title">身份角色</div>
                     <div class="row">
-                        <div class="col-8-1">
+                        <div class="col-12 col-xl-3">
                             <input class="middle-block-checkbox" name="search-type" type="checkbox">婦女
                         </div>
-                        <div class="col-8-1">
+                        <div class="col-12 col-xl-3">
                             <input class="middle-block-checkbox" name="search-type" type="checkbox">婦女
                         </div>
-                        <div class="col-8-1">
+                        <div class="col-12 col-xl-3">
                             <input class="middle-block-checkbox" name="search-type" type="checkbox">婦女
                         </div>
-                        <div class="col-8-1">
+                        <div class="col-12 col-xl-3">
                             <input class="middle-block-checkbox" name="search-type" type="checkbox">婦女
                         </div>
                     </div>
@@ -91,47 +92,69 @@
                 <div class="middle-block">
                     <div class="middle-block-title">查詢條件</div>
                     <div class="row">
-                        <div class="col-10 padding-0">
-                            <div class="middle-block-res-block">
-                                <span class="middle-block-res">
+                        <div class="col-12 col-xl-10 padding-0">
+                            <div class="d-none d-xl-flex middle-block-res-block">
+                                <div class="middle-block-res">
                                     婦女&nbsp;&nbsp;
                                     <div class="delete-btn">
                                         ✕
                                     </div>
-                                </span>
-                                <span class="middle-block-res">
+                                </div>
+                                <div class="middle-block-res">
                                     一般成人&nbsp;&nbsp;
                                     <div class="delete-btn">
                                         ✕
                                     </div>
-                                </span>
-                                <span class="middle-block-res">
+                                </div>
+                                <div class="middle-block-res">
                                     都市發展局&nbsp;&nbsp;
                                     <div class="delete-btn">
                                         ✕
                                     </div>
-                                </span>
+                                </div>
+                            </div>
+                            <div class="d-xl-none middle-block-res-block">
+                                <div class="middle-block-res">
+                                    婦女&nbsp;&nbsp;
+                                    <div class="delete-btn">
+                                        ✕
+                                    </div>
+                                </div>
+                                <div class="middle-block-res">
+                                    一般成人&nbsp;&nbsp;
+                                    <div class="delete-btn">
+                                        ✕
+                                    </div>
+                                </div>
+                                <div class="middle-block-res">
+                                    都市發展局&nbsp;&nbsp;
+                                    <div class="delete-btn">
+                                        ✕
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-2 clear-btn-block">
+                        <div class="col-12 col-xl-2 clear-btn-block">
                             <button class="clear-btn" type="button">
                                 清除條件
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="middle-text-block">
-                    搜索結果:共30項
+                <div class="row middle-info-block">
+                    <div class="col-12 col-xl-6 middle-text-block">
+                        搜索結果:共30項
+                    </div>
+                    <div class="col-12 col-xl-6 middle-page-qt">
+                        此頁顯示筆數
+                        <select>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>30</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="middle-page-qt">
-                    此頁顯示筆數
-                    <select>
-                        <option>10</option>
-                        <option>15</option>
-                        <option>30</option>
-                    </select>
-                </div>
-                <div class="middle-content">
+                <div class="d-none d-xl-block middle-content">
                     <table class="middle-content-table">
                         <thead>
                             <tr>
@@ -403,14 +426,449 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="page-block">
-                    <div class="page page-first ">第一頁</div>
-                    <div class="page page-num active ">1</div>
-                    <div class="page page-num ">2</div>
-                    <div class="page page-num ">3</div>
-                    <div class="page page-num ">4</div>
-                    <div class="page page-num ">5</div>
-                    <div class="page page-last ">最末頁</div>
+                <div class="d-xl-none">
+                    <div class="row middle-content">
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">門牌補發申請</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">戶政</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">戶政事務、門牌事務、補發申請</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-1">線上受理</span>
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-3">自行填寫</span>
+                                        <span class="tag tag-4">縣民服務升級</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">身心障礙者專用停車位識別證申請</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">社福</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">身心障礙者、停車位、識別證申請</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-1">線上受理</span>
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-5">MyData快速申請</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">15噸以上(含)大貨車及聯結車臨時通行證</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">交通</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">大貨車、連結車、臨時通行證</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-5">MyData快速申請</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row middle-content">
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">門牌補發申請</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">戶政</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">戶政事務、門牌事務、補發申請</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-1">線上受理</span>
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-3">自行填寫</span>
+                                        <span class="tag tag-4">縣民服務升級</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">身心障礙者專用停車位識別證申請</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">社福</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">身心障礙者、停車位、識別證申請</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-1">線上受理</span>
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-5">MyData快速申請</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">15噸以上(含)大貨車及聯結車臨時通行證</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">交通</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">大貨車、連結車、臨時通行證</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-5">MyData快速申請</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row middle-content">
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">門牌補發申請</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">戶政</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">戶政事務、門牌事務、補發申請</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-1">線上受理</span>
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-3">自行填寫</span>
+                                        <span class="tag tag-4">縣民服務升級</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">身心障礙者專用停車位識別證申請</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">社福</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">身心障礙者、停車位、識別證申請</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-1">線上受理</span>
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-5">MyData快速申請</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">15噸以上(含)大貨車及聯結車臨時通行證</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">交通</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">大貨車、連結車、臨時通行證</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-5">MyData快速申請</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row middle-content">
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">門牌補發申請</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">戶政</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">戶政事務、門牌事務、補發申請</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-1">線上受理</span>
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-3">自行填寫</span>
+                                        <span class="tag tag-4">縣民服務升級</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">身心障礙者專用停車位識別證申請</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">社福</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">身心障礙者、停車位、識別證申請</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-1">線上受理</span>
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-5">MyData快速申請</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">15噸以上(含)大貨車及聯結車臨時通行證</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">交通</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">大貨車、連結車、臨時通行證</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-5">MyData快速申請</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row middle-content">
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">門牌補發申請</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">戶政</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">戶政事務、門牌事務、補發申請</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-1">線上受理</span>
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-3">自行填寫</span>
+                                        <span class="tag tag-4">縣民服務升級</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">身心障礙者專用停車位識別證申請</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">社福</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">身心障礙者、停車位、識別證申請</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-1">線上受理</span>
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-5">MyData快速申請</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-xl-4">
+                            <div class="middle-content-block">
+                                <div class="middle-text-lg">15噸以上(含)大貨車及聯結車臨時通行證</div>
+                                <div class="middle-text-sm">都市發展局</div>
+                                <div class="middle-content-bottom">
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/W.jpg">
+                                        <div class="middle-text-sm">交通</div>
+                                    </div>
+                                    <div class="middle-type-block">
+                                        <img src="assets/images/V.png">
+                                        <div class="middle-text-sm">大貨車、連結車、臨時通行證</div>
+                                    </div>
+                                    <div class="middle-tag-block">
+                                        <span class="tag tag-2">臨櫃</span>
+                                        <span class="tag tag-5">MyData快速申請</span>
+                                    </div>
+                                </div>
+                                <div class="middle-count-block">
+                                    <div class="middle-count">
+                                        <img src="assets/images/F.png">
+                                        <div class="middle-count-num">300</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-xl-flex page-block">
+                    <div class="page page-first">第一頁</div>
+                    <div class="page page-num active">1</div>
+                    <div class="page page-num">2</div>
+                    <div class="page page-num">3</div>
+                    <div class="page page-num">4</div>
+                    <div class="page page-num">5</div>
+                    <div class="page page-last">最末頁</div>
+                </div>
+                <div class="d-xl-none page-block">
+                    <div class="page page-num">&lt;&lt;</div>
+                    <div class="page page-num active">1</div>
+                    <div class="page page-num">2</div>
+                    <div class="page page-num">3</div>
+                    <div class="page page-num">&gt;&gt;</div>
                 </div>
             </div>
         </form>
