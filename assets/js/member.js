@@ -3,6 +3,11 @@ $(function() {
     $("#footer").load("./footer.html");
 });
 
+window.onload = function() {
+    var content_height = $(document.body).height() - $("header").height() - $("footer").height();
+    $("article").css("min-height", content_height + "px");
+}
+
 var hide = true;
 
 function open_phone_list() {

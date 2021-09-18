@@ -1,3 +1,7 @@
+body {
+    min-height: 100vh;
+}
+
 .t-block {
     height: 45px;
 }
@@ -44,7 +48,6 @@ article {
     font-family: 'Noto Sans TC', 'Roboto';
     padding-top: 30px;
     padding-bottom: 30px;
-    min-height: 89vh;
 }
 
 article header {

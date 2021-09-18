@@ -76,8 +76,12 @@
     top: 10px;
 }
 
+.middle-count-block {
+    font-size: 14px;
+}
+
 .middle-count-block img {
-    width: 30px;
+    width: 20px;
     margin-right: 5px;
 }
 

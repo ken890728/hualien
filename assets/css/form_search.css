@@ -45,7 +45,7 @@
 .btn-tab {
     border: solid #cccccc 1px;
     color: #585657;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bolder;
     padding: 5px 10px;
     cursor: pointer;
@@ -75,6 +75,10 @@
     margin-bottom: 10px;
 }
 
+.ch-check {
+    margin-right: 30px;
+}
+
 .search-icon {
     position: absolute;
     right: 25px;
@@ -83,7 +87,7 @@
 }
 
 .middle-block-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bolder;
     color: #585657;
     margin-bottom: 15px;
