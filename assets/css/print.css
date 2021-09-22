@@ -1,0 +1,12 @@
+﻿@media print {
+    a[href]:after {
+        content: "";
+    }
+
+    .form-apply-step {
+        display: none !important;
+    }
+    .tab-pane {
+        display: block !important;
+    }
+}
