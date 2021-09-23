@@ -86,8 +86,14 @@
     color: black;
 }
 
-.table-view tbody tr td:nth-child(3) {
+.table-view tbody tr td:nth-child(3),
+.table-view tbody tr td:nth-child(5),
+.table-view tbody tr td:nth-child(6) {
     text-align: left;
+}
+
+.table-view tbody tr td:nth-child(5) {
+    padding: 20px;
 }
 
 .table-view tbody tr td a {

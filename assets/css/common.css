@@ -2,32 +2,6 @@ body {
     min-height: 100vh;
 }
 
-.t-block {
-    height: 45px;
-}
-
-.header-text-block {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.header-text-block .col {
-    font-size: 20px;
-    color: #707070;
-}
-
-.header-text-block .header-text {
-    padding: 10px 10px;
-}
-
-#header {
-    box-shadow: 1px 1px 6px 1px #cccccc;
-}
-
-.header .row {
-    align-items: flex-end;
-}
-
 .phone-list-icon {
     font-size: 30px;
     color: #3574aa;
@@ -46,8 +20,9 @@ body {
 article {
     background-color: rgba(240, 246, 242, 1);
     font-family: 'Noto Sans TC', 'Roboto';
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    min-height: 100vh;
 }
 
 article header {
