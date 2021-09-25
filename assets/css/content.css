@@ -179,6 +179,7 @@
     font-weight: bolder;
     width: 100%;
     border: solid #cccccc 1px;
+    cursor: pointer;
 }
 
 .input-btn-block .success {

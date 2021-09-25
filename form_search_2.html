@@ -38,27 +38,27 @@
                     <div class="col-12 col-xl-7">
                         <div class="row btn-tab-clock">
                             <div class="col-6 col-5-1">
-                                <button class="btn-tab">
+                                <button type="button" class="btn-tab" onclick="change_block(1)">
                                     單位機關
                                 </button>
                             </div>
                             <div class="col-6 col-5-1">
-                                <button class="btn-tab">
+                                <button type="button" class="btn-tab" onclick="change_block(2)">
                                     表單類型
                                 </button>
                             </div>
                             <div class="col-6 col-5-1">
-                                <button class="btn-tab">
+                                <button type="button" class="btn-tab" onclick="change_block(3)">
                                     申請類型
                                 </button>
                             </div>
                             <div class="col-6 col-5-1">
-                                <button class="btn-tab">
+                                <button type="button" class="btn-tab" onclick="change_block(4)">
                                     填寫方式
                                 </button>
                             </div>
                             <div class="col-6 col-5-1">
-                                <button class="btn-tab active">
+                                <button type="button" class="btn-tab active" onclick="change_block(5)">
                                     身份角色
                                 </button>
                             </div>
@@ -72,10 +72,78 @@
                         <div class="search-icon"><i class="fa fa-search" aria-hidden="true"></i></div>
                     </div>
                     <div class="d-none d-xl-block col-xl-1 switch-icon">
-                        <img src="assets/images/block2.JPG" height="36px">
+                        <img src="assets/images/block1.JPG" height="36px">
                     </div>
                 </div>
-                <div class="middle-block">
+                <div id="check-box-block-1" class="middle-block check-box-block" style="display: none;">
+                    <div class="middle-block-title">單位機關</div>
+                    <div class="row">
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">都市發展局
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">都市發展局
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">都市發展局
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">都市發展局
+                        </div>
+                    </div>
+                </div>
+                <div id="check-box-block-2" class="middle-block check-box-block" style="display: none;">
+                    <div class="middle-block-title">表單類型</div>
+                    <div class="row">
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">戶政
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">戶政
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">戶政
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">戶政
+                        </div>
+                    </div>
+                </div>
+                <div id="check-box-block-3" class="middle-block check-box-block" style="display: none;">
+                    <div class="middle-block-title">申請類型</div>
+                    <div class="row">
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">線上受理
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">線上受理
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">線上受理
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">線上受理
+                        </div>
+                    </div>
+                </div>
+                <div id="check-box-block-4" class="middle-block check-box-block" style="display: none;">
+                    <div class="middle-block-title">填寫方式</div>
+                    <div class="row">
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">自行填寫
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">自行填寫
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">自行填寫
+                        </div>
+                        <div class="ch-check">
+                            <input class="middle-block-checkbox" name="search-type" type="checkbox">自行填寫
+                        </div>
+                    </div>
+                </div>
+                <div id="check-box-block-5" class="middle-block check-box-block">
                     <div class="middle-block-title">身份角色</div>
                     <div class="row">
                         <div class="ch-check">
@@ -92,31 +160,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="middle-block">
+                <div class="middle-block middle-block-tags">
                     <div class="middle-block-title">查詢條件</div>
                     <div class="row">
                         <div class="col-12 col-xl-10 padding-0">
-                            <div class="d-none d-xl-flex middle-block-res-block">
-                                <div class="middle-block-res">
-                                    婦女&nbsp;&nbsp;
-                                    <div class="delete-btn">
-                                        ✕
-                                    </div>
-                                </div>
-                                <div class="middle-block-res">
-                                    一般成人&nbsp;&nbsp;
-                                    <div class="delete-btn">
-                                        ✕
-                                    </div>
-                                </div>
-                                <div class="middle-block-res">
-                                    都市發展局&nbsp;&nbsp;
-                                    <div class="delete-btn">
-                                        ✕
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="d-xl-none middle-block-res-block">
+                            <div class="d-block d-xl-flex middle-block-res-block">
                                 <div class="middle-block-res">
                                     婦女&nbsp;&nbsp;
                                     <div class="delete-btn">
@@ -138,7 +186,7 @@
                             </div>
                         </div>
                         <div class="col-12 col-xl-2 clear-btn-block">
-                            <button class="clear-btn" type="button">
+                            <button class="clear-btn" type="button" onclick="clear_all()">
                                 清除條件
                             </button>
                         </div>
@@ -634,6 +682,25 @@
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
         });
+
+        function change_block(n) {
+            $(".btn-tab.active").removeClass("active");
+            $(".btn-tab-clock .col-6:nth-child(" + n + ") .btn-tab").addClass("active");
+            $(".check-box-block").hide();
+            $("#check-box-block-" + n).show();
+        }
+
+        $(".delete-btn").on('click', function() {
+            $(this).parent().remove();
+            if ($(".middle-block-res-block .middle-block-res").length == 0) {
+                $(".middle-block-tags").hide();
+            }
+        });
+
+        function clear_all() {
+            $(".middle-block-res-block .middle-block-res").remove();
+            $(".middle-block-tags").hide();
+        }
     </script>
     <script src="assets/js/common.js"></script>
 </body>

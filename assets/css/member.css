@@ -33,3 +33,16 @@
 .left-menu-item.left-menu-item-active {
     color: #3574aa;
 }
+
+@media (min-width: 1140px) {
+    .input-btn-block .col-12.col-xl-4 {
+        padding: 0px;
+    }
+    .left-menu-item .row .col-2 {
+        padding: 0;
+    }
+    .left-menu-item .row .col-2 img {
+        width: 100%;
+        margin-top: -2px;
+    }
+}

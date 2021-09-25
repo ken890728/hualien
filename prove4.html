@@ -67,25 +67,25 @@
                         <img src="assets/images/4.jpg" alt="folder" width="32px" height="32px"> 相關檔案
                     </div>
                     <div class="scroll-block">
-                        <div class="row checkbox-group">
-                            <div class="col-12"> <input type="checkbox" value="" /> <span>相關條文</span> </div>
-                            <div class="col-12"> <input type="checkbox" value="" /> 相關條文 </div>
-                            <div class="col-12"> <input type="checkbox" value="" /> 相關條文 </div>
-                            <div class="col-12"> <input type="checkbox" value="" /> 相關條文 </div>
-                            <div class="col-12"> <input type="checkbox" value="" /> 相關條文 </div>
-                            <div class="col-12"> <input type="checkbox" value="" /> 相關條文 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 申請表 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 申請表 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 申請表 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 申請表 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 申請表 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 申請表 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 必要文件 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 必要文件 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 必要文件 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 必要文件 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 必要文件 </div>
-                            <div class="col-12"> <input type="checkbox" value="" checked/> 必要文件 </div>
+                        <div class="row padding-47 checkbox-group file-block">
+                            <div class="col-12 file-item file-active"> <input type="checkbox" value="" /> <span>相關條文</span> </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" /> 相關條文 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" /> 相關條文 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" /> 相關條文 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" /> 相關條文 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" /> 相關條文 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 申請表 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 申請表 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 申請表 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 申請表 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 申請表 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 申請表 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 必要文件 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 必要文件 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 必要文件 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 必要文件 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 必要文件 </div>
+                            <div class="col-12 file-item"> <input type="checkbox" value="" checked/> 必要文件 </div>
                         </div>
                     </div>
                     <br>
@@ -133,6 +133,11 @@
 
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
+
+            $(".file-block .file-item").on('click', function() {
+                $(".file-block .file-active").removeClass('file-active');
+                $(this).addClass('file-active');
+            });
         });
     </script>
     <script src="assets/js/common.js"></script>

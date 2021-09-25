@@ -13,6 +13,7 @@ table.steps td {
     vertical-align: top;
     background-color: white;
     border: 1px solid rgb(200, 200, 200);
+    font-weight: bolder;
 }
 
 table.steps td.done {
@@ -40,6 +41,7 @@ td.done span {
     vertical-align: top;
     background-color: white;
     border: 3px solid rgb(156, 200, 19);
+    font-weight: bolder;
 }
 
 .circle {
@@ -72,9 +74,9 @@ td span.required {
     border-radius: 25px;
     background-color: red;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: bolder;
     color: white;
-    padding: 0;
+    padding: 2px;
     padding-left: 5px;
     padding-right: 5px;
     margin-left: 5px;
@@ -84,7 +86,7 @@ td span.required {
     border-radius: 25px;
     background-color: red;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: bolder;
     color: white;
     padding: 0;
     padding-left: 5px;
@@ -121,4 +123,10 @@ section.form button {
 
 .btn-block {
     margin-top: 50px;
+}
+
+@media (min-width: 1140px) {
+    .content-padding {
+        padding: 0 15px;
+    }
 }

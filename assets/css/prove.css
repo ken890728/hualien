@@ -61,10 +61,18 @@ section.sm {
 }
 
 .p-box .title {
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: 30px;
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: bolder;
+    display: flex;
+    align-items: end;
+    line-height: 24px;
+}
+
+.p-box .title img {
+    margin-right: 10px;
 }
 
 .p-box .scroll-block {
@@ -75,34 +83,6 @@ section.sm {
 .content-block {
     margin-left: 0;
     margin-right: 0;
-}
-
-@media (min-width: 1140px) {
-    .p-box .row {
-        margin-left: 45px;
-        margin-right: 45px;
-    }
-    .form-table {
-        font-weight: 500;
-        width: 90%;
-    }
-    .input-data .text-label {
-        text-align: right;
-    }
-}
-
-@media (max-width: 1140px) {
-    .p-box .row {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    .form-table {
-        font-weight: 500;
-        width: 100%;
-    }
-    .input-data .text-label {
-        padding-bottom: 0 !important;
-    }
 }
 
 .p-box .row div {
@@ -133,8 +113,7 @@ center button.btn {
 
 ul.none-list {
     list-style-type: none;
-    margin: 16px;
-    margin-left: 12px;
+    padding: 0;
 }
 
 ul.none-list li:not(:last-child) {
@@ -187,7 +166,7 @@ td .required {
     border-radius: 25px;
     background-color: red;
     font-size: 12px;
-    font-weight: 300;
+    font-weight: bolder;
     color: white;
     padding: 0;
     padding-left: 5px;
@@ -213,34 +192,6 @@ td .required {
     margin-bottom: 50px;
 }
 
-.checkbox-group input[type=checkbox] {
-    margin-right: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    width: 15px;
-    height: 12px;
-    position: relative;
-}
-
-.checkbox-group input[type=checkbox]:after {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 0;
-    content: " ";
-    background-color: white;
-    color: black;
-    display: inline-block;
-    border-radius: 3px;
-    border: 1px solid black;
-}
-
-.checkbox-group input[type=checkbox]:checked:after {
-    content: "✓";
-    font-size: 28px;
-    line-height: 0;
-}
-
 .form-table tr:nth-child(1) {
     background-color: rgb(156, 199, 21);
 }
@@ -252,12 +203,52 @@ td .required {
 
 .form-table td {
     padding-left: 80px;
+    font-weight: bolder;
+}
+
+.form-table tr:nth-child(1) {
+    background-color: rgb(156, 199, 21);
+    text-align: center;
+    font-weight: bolder;
+}
+
+.form-table tr:nth-child(1) td {
+    padding-left: 0;
+    color: white;
 }
 
 .radio-btn {
     margin-bottom: 0;
     padding-bottom: 0;
     font-weight: 500;
+}
+
+.radio-btn-block {
+    display: flex;
+}
+
+input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    padding: 3px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 1px solid #bbbbbb;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+/* appearance for checked radiobutton */
+
+input[type="radio"]:checked {
+    background-color: #93e026;
 }
 
 .input-data {
@@ -271,7 +262,6 @@ td .required {
 }
 
 .option-des-block {
-    margin-left: 30px;
     line-height: 30px;
     padding: 0 !important;
     margin-top: 10px;
@@ -297,4 +287,57 @@ td .required {
     width: 100%;
     padding: 6px;
     border: 1px solid rgb(200, 200, 200);
+}
+
+.option-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media (min-width: 1140px) {
+    .p-box .row {
+        margin-left: 45px;
+        margin-right: 45px;
+    }
+    .form-table {
+        font-weight: 500;
+        width: 90%;
+    }
+    .input-data .text-label {
+        text-align: right;
+    }
+    .option-des-block {
+        margin-left: 50px;
+    }
+    .p-box .title {
+        padding-left: 20px;
+    }
+    .p-box .row.padding-47 div {
+        padding-left: 47px;
+    }
+}
+
+@media (max-width: 1140px) {
+    .p-box .row {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .form-table {
+        font-weight: 500;
+        width: 100%;
+    }
+    .input-data .text-label {
+        padding-bottom: 0 !important;
+    }
+    .p-box .row div {
+        padding-left: 62px;
+    }
+}
+
+.p-box .row .file-item {
+    cursor: pointer;
+}
+
+.p-box .row .file-item.file-active {
+    background-color: #cbe8fd;
 }
