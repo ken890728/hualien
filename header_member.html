@@ -26,7 +26,17 @@
             <li><a href="https://eservices.hl.gov.tw/Case/Index">案件查詢</a></li>
             <li><a href="https://eservices.hl.gov.tw/Form/List">線上申請</a></li>
             <li><a href="https://eservices.hl.gov.tw/ContactUs/Index">聯絡我們</a></li>
-            <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+            <li>
+                <form class="navbar-form" action="/Form/List" method="get">
+                    <div id="search-input-block" class="input-group" style="display: none;">
+                        <label for="search-input" class="d-none">表單關鍵字搜尋</label>
+                        <input type="search" placeholder="表單關鍵字搜尋" name="FormName" id="search-input" class="form-control" title="表單關鍵字搜尋" accesskey="S">
+                    </div>
+                    <span class="input-group-btn">
+                        <button type="button" onclick="show_search()"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </span>
+                </form>
+            </li>
             <li><a href=""><i class="fa fa-user" aria-hidden="true"></i> 登出</a></li>
             <li class="d-xl-none"><a href=""><i class="fa fa-clock-o" aria-hidden="true"></i> 歷史案件</a></li>
             <li class="d-xl-none"><a href=""><i class="fa fa-pencil" aria-hidden="true"></i> 案件歸戶</a></li>
