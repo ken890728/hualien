@@ -265,6 +265,17 @@
     text-align: center;
 }
 
+.compelete-content-block {
+    margin-top: 50px;
+}
+
+.compelete-content-block .compelete-content {
+    text-align: center;
+    font-size: 40px;
+    color: #595757;
+    margin-bottom: 50px;
+}
+
 .edit-btn-block .btn {
     font-size: 20px;
     font-weight: bolder;
@@ -277,4 +288,8 @@
     border: solid #cccccc 1px;
     background-color: white;
     color: black;
+}
+
+.list-block .v-block img {
+    margin-right: 30px;
 }

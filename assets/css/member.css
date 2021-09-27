@@ -26,11 +26,15 @@
 .left-menu-item {
     font-size: 22px;
     font-weight: 700;
-    height: 50px;
+    height: 70px;
 }
 
 .left-menu-item.left-menu-item-active {
     color: #3574aa;
+}
+
+.list-block .v-block img {
+    margin-right: 30px;
 }
 
 @media (min-width: 1140px) {
