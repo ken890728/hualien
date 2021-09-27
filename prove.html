@@ -30,7 +30,7 @@
 
     <article>
         <div class="container">
-            <header> 重劃費用負擔證明 </header>
+            <header class="title-block"> 重劃費用負擔證明 </header>
             <div class="title row">
                 <div class="col">
                     <div class="blue"> 線上受理 </div>
@@ -65,10 +65,10 @@
                             <div class="col-xl-2 col-6">
                                 案件條碼
                             </div>
-                            <div class="col-xl-4 col-6"> <img src="assets/images/code.jpg" alt=""> </div>
-                            <div class="col-xl-2 col-6"> 案件編號 </div>
-                            <div class="col-xl-2 col-6"> 123456789 </div>
-                            <div class="col-xl-2 col-12"> <button type="button" class="btn green font-white"> 複製案件編號 </button> </div>
+                            <div class="col-xl-4"> <img src="assets/images/code.jpg" alt=""> </div>
+                            <div class="col-xl-2"> 案件編號 </div>
+                            <div id="case-id" class="col-xl-2"> 123456789 </div>
+                            <div class="col-xl-2"> <button type="button" class="btn green font-white" onclick="copy()"> 複製案件編號 </button> </div>
                         </div>
 
                         <hr>
@@ -156,6 +156,17 @@
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
         });
+
+        function copy() {
+            let case_id = $('#case-id').text();
+            navigator.clipboard.writeText(case_id)
+                .then(() => {
+                    alert(case_id + "已複製");
+                })
+                .catch(err => {
+                    console.log('Something went wrong', err);
+                })
+        }
     </script>
     <script src="assets/js/common.js"></script>
 </body>

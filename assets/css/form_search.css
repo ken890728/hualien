@@ -9,13 +9,6 @@
 }
 
 @media (min-width: 1140px) {
-    .title-block {
-        padding-top: 50px;
-        padding-bottom: 40px;
-        font-size: 30px;
-        font-weight: bolder;
-        color: #585657;
-    }
     .btn-tab-clock .col-5-1 {
         padding-left: 0;
         padding-right: 10px;
@@ -28,18 +21,15 @@
 }
 
 @media (max-width: 1140px) {
-    .title-block {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 30px;
-        font-weight: bolder;
-        color: #585657;
-    }
     .btn-tab-clock .col-5-1 {
         margin-top: 10px;
         padding-left: 0;
         padding-right: 0;
     }
+}
+
+.tool-block {
+    margin-top: 30px;
 }
 
 .btn-tab {

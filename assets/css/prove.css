@@ -332,6 +332,16 @@ input[type="radio"]:checked {
     .p-box .row div {
         padding-left: 62px;
     }
+    .phone-block-padding {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+    .phone-block-padding-tb {
+        padding: 10px !important;
+    }
+    .phone-td-height {
+        height: 70px;
+    }
 }
 
 .p-box .row .file-item {
@@ -340,4 +350,8 @@ input[type="radio"]:checked {
 
 .p-box .row .file-item.file-active {
     background-color: #cbe8fd;
+}
+
+.no-margin {
+    margin: 0 !important;
 }

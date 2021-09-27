@@ -20,7 +20,6 @@ body {
 article {
     background-color: rgba(240, 246, 242, 1);
     font-family: 'Noto Sans TC', 'Roboto';
-    padding-top: 8rem;
     padding-bottom: 5rem;
     min-height: 100vh;
 }
@@ -52,4 +51,26 @@ article section {
 
 .footer-text .col {
     margin: auto 0;
+}
+
+@media (max-width: 1140px) {
+    article {
+        padding-top: 5rem;
+    }
+    .title-block {
+        font-size: 30px;
+        font-weight: bolder;
+        color: #585657;
+    }
+}
+
+@media (min-width: 1140px) {
+    article {
+        padding-top: 8rem;
+    }
+    .title-block {
+        font-size: 30px;
+        font-weight: bolder;
+        color: #585657;
+    }
 }
