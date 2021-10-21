@@ -43,14 +43,15 @@
                             手機號碼 <span class="required"> * </span>
                         </div>
                         <div class="col-12">
-                            <input type="password">
+                            <input type="text">
                         </div>
 
                         <div class="col-12">
                             密碼 <span class="required"> * </span>
                         </div>
-                        <div class="col-12 eye">
+                        <div class="col-12 pass-block">
                             <input type="password">
+                            <span class="eye"></span>
                         </div>
                         <div class="col-12">
                             驗證碼 <span class="required"> * </span>
@@ -94,7 +95,7 @@
 
             <div class="row submit-btn-block">
                 <div class="col-12 col-md-3 ">
-                    <a href=" "> 尚未加入會員？ </a>
+                    尚未加入會員？
                 </div>
                 <div class="col-12 col-md-3 ">
                     <button type="button " class="btn btn-warning "> 馬上註冊 </button>
@@ -134,6 +135,17 @@
 
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        var show = 0;
+        $(document).on('click', ".eye", function() {
+            if (show == 0) {
+                $(".pass-block input").attr("type", "text");
+                show = 1;
+            } else {
+                $(".pass-block input").attr("type", "password");
+                show = 0;
+            }
         });
     </script>
     <script src="assets/js/common.js"></script>

@@ -58,7 +58,7 @@
                                 </button>
                             </div>
                             <div class="col-6 col-5-1">
-                                <button type="button" class="btn-tab active" onclick="change_block(5)">
+                                <button type="button" class="btn-tab" onclick="change_block(5)">
                                     身份角色
                                 </button>
                             </div>
@@ -79,16 +79,16 @@
                     <div class="middle-block-title">單位機關</div>
                     <div class="row">
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">都市發展局
+                            <input id="a1" name="a1" class="middle-block-checkbox" type="checkbox"><label for="a1">都市發展局</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">都市發展局
+                            <input id="a2" name="a2" class="middle-block-checkbox" type="checkbox"><label for="a2">都市發展局</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">都市發展局
+                            <input id="a3" name="a3" class="middle-block-checkbox" type="checkbox"><label for="a3">都市發展局</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">都市發展局
+                            <input id="a4" name="a4" class="middle-block-checkbox" type="checkbox"><label for="a4">都市發展局</label>
                         </div>
                     </div>
                 </div>
@@ -96,16 +96,16 @@
                     <div class="middle-block-title">表單類型</div>
                     <div class="row">
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">戶政
+                            <input id="b1" name="b1" class="middle-block-checkbox" type="checkbox"><label for="b1">戶政</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">戶政
+                            <input id="b2" name="b2" class="middle-block-checkbox" type="checkbox"><label for="b2">戶政</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">戶政
+                            <input id="b3" name="b3" class="middle-block-checkbox" type="checkbox"><label for="b3">戶政</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">戶政
+                            <input id="b4" name="b4" class="middle-block-checkbox" type="checkbox"><label for="b4">戶政</label>
                         </div>
                     </div>
                 </div>
@@ -113,16 +113,16 @@
                     <div class="middle-block-title">申請類型</div>
                     <div class="row">
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">線上受理
+                            <input id="c1" name="c1" class="middle-block-checkbox" type="checkbox"><label for="c1">線上受理</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">線上受理
+                            <input id="c2" name="c2" class="middle-block-checkbox" type="checkbox"><label for="c2">線上受理</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">線上受理
+                            <input id="c3" name="c3" class="middle-block-checkbox" type="checkbox"><label for="c3">線上受理</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">線上受理
+                            <input id="c4" name="c4" class="middle-block-checkbox" type="checkbox"><label for="c4">線上受理</label>
                         </div>
                     </div>
                 </div>
@@ -130,62 +130,48 @@
                     <div class="middle-block-title">填寫方式</div>
                     <div class="row">
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">自行填寫
+                            <input id="d1" name="d1" class="middle-block-checkbox" type="checkbox"><label for="d1">自行填寫</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">自行填寫
+                            <input id="d2" name="d2" class="middle-block-checkbox" type="checkbox"><label for="d2">自行填寫</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">自行填寫
+                            <input id="d3" name="d3" class="middle-block-checkbox" type="checkbox"><label for="d3">自行填寫</label>
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">自行填寫
+                            <input id="d4" name="d4" class="middle-block-checkbox" type="checkbox"><label for="d4">自行填寫</label>
                         </div>
                     </div>
                 </div>
-                <div id="check-box-block-5" class="middle-block check-box-block">
+                <div id="check-box-block-5" class="middle-block check-box-block" style="display: none;">
                     <div class="middle-block-title">身份角色</div>
                     <div class="row">
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">婦女
+                            <input id="e1" name="e1" class="middle-block-checkbox" type="checkbox"><label for="e1"></label>婦女
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">婦女
+                            <input id="e2" name="e2" class="middle-block-checkbox" type="checkbox"><label for="e2"></label>婦女
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">婦女
+                            <input id="e3" name="e3" class="middle-block-checkbox" type="checkbox"><label for="e3"></label>婦女
                         </div>
                         <div class="ch-check">
-                            <input class="middle-block-checkbox" name="search-type" type="checkbox">婦女
+                            <input id="e4" name="e4" class="middle-block-checkbox" type="checkbox"><label for="e4"></label>婦女
                         </div>
                     </div>
                 </div>
-                <div class="middle-block middle-block-tags">
+                <div class="middle-block middle-block-tags" style="display: none;">
                     <div class="middle-block-title">查詢條件</div>
                     <div class="row">
                         <div class="col-12 col-xl-10 padding-0">
                             <div class="d-block d-xl-flex middle-block-res-block">
-                                <div class="middle-block-res">
-                                    婦女&nbsp;&nbsp;
-                                    <div class="delete-btn">
-                                        ✕
-                                    </div>
-                                </div>
-                                <div class="middle-block-res">
-                                    一般成人&nbsp;&nbsp;
-                                    <div class="delete-btn">
-                                        ✕
-                                    </div>
-                                </div>
-                                <div class="middle-block-res">
-                                    都市發展局&nbsp;&nbsp;
-                                    <div class="delete-btn">
-                                        ✕
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                         <div class="col-12 col-xl-2 clear-btn-block">
+                            <button class="search-btn" type="button">
+                                查詢
+                            </button>
                             <button class="clear-btn" type="button" onclick="clear_all()">
                                 清除條件
                             </button>
@@ -206,7 +192,7 @@
                     </div>
                 </div>
                 <div class="row middle-content">
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">門牌補發申請</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -235,7 +221,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">身心障礙者專用停車位識別證申請</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -263,7 +249,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">15噸以上(含)大貨車及聯結車臨時通行證</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -291,7 +277,7 @@
                     </div>
                 </div>
                 <div class="row middle-content">
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">門牌補發申請</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -320,7 +306,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">身心障礙者專用停車位識別證申請</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -348,7 +334,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">15噸以上(含)大貨車及聯結車臨時通行證</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -376,7 +362,7 @@
                     </div>
                 </div>
                 <div class="row middle-content">
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">門牌補發申請</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -405,7 +391,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">身心障礙者專用停車位識別證申請</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -433,7 +419,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">15噸以上(含)大貨車及聯結車臨時通行證</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -462,7 +448,7 @@
                 </div>
 
                 <div class="row middle-content">
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">門牌補發申請</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -491,7 +477,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">身心障礙者專用停車位識別證申請</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -519,7 +505,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">15噸以上(含)大貨車及聯結車臨時通行證</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -547,7 +533,7 @@
                     </div>
                 </div>
                 <div class="row middle-content">
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">門牌補發申請</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -576,7 +562,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">身心障礙者專用停車位識別證申請</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -604,7 +590,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-xl-4">
+                    <div class="col-12 col-xl-4 form-link" data-href="prove1.html">
                         <div class="middle-content-block">
                             <div class="middle-text-lg">15噸以上(含)大貨車及聯結車臨時通行證</div>
                             <div class="middle-text-sm">都市發展局</div>
@@ -651,6 +637,15 @@
         </form>
     </article>
 
+    <div id="tag-temp" style="display:none">
+        <div class="middle-block-res">
+            <span class="tag-text"></span>&nbsp;&nbsp;
+            <div class="delete-btn">
+                ✕
+            </div>
+        </div>
+    </div>
+
     <footer id="footer" class="footer fixed-bottom">
 
     </footer>
@@ -683,14 +678,20 @@
             $('[data-toggle="tooltip"]').tooltip();
         });
 
+        var now_block = 0;
+
         function change_block(n) {
             $(".btn-tab.active").removeClass("active");
-            $(".btn-tab-clock .col-6:nth-child(" + n + ") .btn-tab").addClass("active");
             $(".check-box-block").hide();
-            $("#check-box-block-" + n).show();
+            if (now_block != n) {
+                $(".btn-tab-clock .col-6:nth-child(" + n + ") .btn-tab").addClass("active");
+                $("#check-box-block-" + n).show();
+            }
+            now_block = n;
         }
 
-        $(".delete-btn").on('click', function() {
+        $(document).on('click', ".delete-btn", function() {
+            $('#' + $(this).parent().data("id")).prop('checked', false);
             $(this).parent().remove();
             if ($(".middle-block-res-block .middle-block-res").length == 0) {
                 $(".middle-block-tags").hide();
@@ -701,6 +702,26 @@
             $(".middle-block-res-block .middle-block-res").remove();
             $(".middle-block-tags").hide();
         }
+
+        $(".form-link").on('click', function() {
+            window.location = $(this).data("href");
+        });
+
+        $(".middle-block-checkbox").on('change', function() {
+            if ($(this).is(":checked")) {
+                tag_temp = $("#tag-temp").children();
+                tag_temp = $(tag_temp).clone();
+                tag_temp.children(".tag-text").text($('label[for="' + $(this).attr('id') + '"]').text());
+                tag_temp.attr('data-id', $(this).attr('id'));
+                $(".middle-block-res-block").append(tag_temp);
+                $(".middle-block-tags").show();
+            } else {
+                $('.middle-block-res[data-id="' + $(this).attr('id') + '"]').remove();
+                if ($(".middle-block-res-block .middle-block-res").length == 0) {
+                    $(".middle-block-tags").hide();
+                }
+            }
+        });
     </script>
     <script src="assets/js/common.js"></script>
 </body>

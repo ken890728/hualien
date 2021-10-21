@@ -71,6 +71,10 @@ article section {
     margin-bottom: 30px;
 }
 
+.fa-search:before {
+    cursor: pointer;
+}
+
 #footer {
     background-color: #3574aa;
 }

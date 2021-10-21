@@ -5,6 +5,15 @@
     border: solid #cccccc 1px;
 }
 
+.middle-content-table tbody tr {
+    cursor: pointer;
+    border-bottom: solid #cccccc 2px;
+}
+
+.middle-content-table tbody tr:hover {
+    background-color: #eeeeee;
+}
+
 .middle-content-table thead tr th {
     padding: 20px 0px;
     text-align: center;

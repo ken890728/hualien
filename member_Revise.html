@@ -68,7 +68,7 @@
                     <div class="left-menu-item left-menu-item-active">
                         <div class="row">
                             <div class="col-2">
-                                <img src="assets/images/mem_icon3_a.JPG">
+                                <img src="assets/images/mem_icon3.JPG">
                             </div>
                             <div class="col-10">
                                 基本資料
@@ -210,6 +210,11 @@
 
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
+        });
+
+        $(".left-menu-item").on('click', function() {
+            $(".left-menu-item").removeClass('left-menu-item-active');
+            $(this).addClass('left-menu-item-active');
         });
     </script>
     <script src="assets/js/member.js"></script>

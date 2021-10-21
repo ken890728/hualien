@@ -132,6 +132,17 @@
     text-align: right;
 }
 
+.search-btn {
+    font-size: 20px;
+    padding: 5px 25px;
+    border: none;
+    color: white;
+    background-color: #3574aa;
+    cursor: pointer;
+    margin-bottom: 5px;
+    width: 130px;
+}
+
 .clear-btn {
     font-size: 20px;
     padding: 5px 25px;
@@ -139,6 +150,7 @@
     color: white;
     background-color: #606d75;
     cursor: pointer;
+    width: 130px;
 }
 
 .middle-info-block {
@@ -201,4 +213,12 @@
 .page-block .page-first,
 .page-block .page-last {
     padding: 5px 30px;
+}
+
+.form-link .middle-content-block {
+    cursor: pointer;
+}
+
+.form-link .middle-content-block:hover {
+    background-color: #eeeeee;
 }
