@@ -293,3 +293,15 @@
 .list-block .v-block img {
     margin-right: 30px;
 }
+
+.eye:after {
+    background: url(../images/F.png) no-repeat;
+    background-size: 30px 30px;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 80px;
+    right: 20px;
+    content: "";
+    cursor: pointer;
+}

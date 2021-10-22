@@ -56,9 +56,9 @@
                             <div class="label">姓名<span class="red">*</span></div>
                             <div><input name="name" class="input" type="text"></div>
                         </div>
-                        <div class="col-12 col-xl-6">
+                        <div class="col-12 col-xl-6 pass-block">
                             <div class="label">密碼<span class="red">*</span></div>
-                            <div><input name="password" class="input" type="password"></div>
+                            <div><input name="password" class="input" type="password"><span class="eye"></span></div>
                         </div>
                     </div>
                     <div class="row">
@@ -66,7 +66,6 @@
                             <div class="label">生日<span class="red">*</span></div>
                             <div><input name="birth" class="input" type="date"></div>
                         </div>
-
                         <div class="col-12 col-xl-6">
                             <div class="label">信箱<span class="red">*</span></div>
                             <div><input name="email" class="input" type="email"></div>
@@ -144,6 +143,16 @@
 
         $(function() {
             $('[data-toggle="tooltip"]').tooltip();
+        });
+        var show = 0;
+        $(document).on('click', ".eye", function() {
+            if (show == 0) {
+                $(".pass-block input").attr("type", "text");
+                show = 1;
+            } else {
+                $(".pass-block input").attr("type", "password");
+                show = 0;
+            }
         });
     </script>
     <script src="assets/js/common.js"></script>
